@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ListaDeCompra</string>
+    <string name="addButtonAddItem">Añadir Item</string>
+    <string name="payButton">Pagar</string>
+    <string name="totalTextView">Total = 0.00 $</string>
+    <string name="ButtonAddItemCarrito">Anadir al Carrito</string>
+    <string name="ButtonConfirm">Confirmar</string>
+    <string name="textViewPaymentTotal">Total : 0.00 $</string>
+    <string name="textViewTotalToPay">El total a Pagar es de : </string>
+    <string name="textViewTotalMoney">0.00</string>
+    <string name="editTextNumberDecimal">Introduce con que pagaras</string>
+    <string name="buttonFinalizar">Finalizar Compra</string>
+    <string name="app_nametextViewVuelta">Se le devolvera : 0.00 $</string>
+    <string name="buttonGoMain">Cancelar</string>
+</resources>

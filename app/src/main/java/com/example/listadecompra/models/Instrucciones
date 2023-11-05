@@ -1,0 +1,60 @@
+1. Diseño de la UI y Navegación
+MainActivity (Lista de Compras):
+
+Usa un RecyclerView para mostrar las líneas de compra.
+Crea un adaptador personalizado para el RecyclerView que maneje los ítems de la lista de compras.
+Añade un TextView para mostrar el total de las compras.
+Incluye dos botones: uno para añadir nuevas líneas de compra y otro para pagar.
+AddItemActivity (Añadir Ítems):
+
+Muestra una lista de productos (podría ser otro RecyclerView o un Spinner).
+Resalta los productos con bajo stock en rojo.
+Permite seleccionar un producto y especificar la cantidad.
+Añade un botón para confirmar y agregar la línea de compra a la lista principal.
+PaymentActivity (Pantalla de Pago):
+
+Muestra el total a pagar.
+Incluye un campo de entrada para que el usuario introduzca la cantidad entregada.
+Añade un botón para finalizar la compra y calcular el cambio.
+Muestra el detalle del cambio a devolver.
+
+2. Modelo de Datos
+Crea clases para manejar los datos:
+
+Una clase Product para los productos.
+Una clase PurchaseLine para las líneas de compra.
+Un PurchaseManager o similar para manejar las operaciones de compra.
+
+3. Gestión de Datos
+Puedes usar SharedPreferences, SQLite (con Room o SQLiteOpenHelper), o cualquier otra forma de almacenamiento persistente para guardar las líneas de compra y el estado de pagado/no pagado.
+
+4. Lógica de Negocio
+Implementa la lógica para:
+
+Añadir nuevas líneas de compra.
+Calcular el total.
+Gestionar el pago y el cálculo del cambio.
+
+5. Implementación de UI
+Define los layouts XML para cada pantalla (Activity). Por ejemplo, para MainActivity, tendrás algo así:
+
+xml
+Copy code
+<LinearLayout ... >
+    <RecyclerView android:id="@+id/recyclerView" ... />
+    <TextView android:id="@+id/totalTextView" ... />
+    <Button android:id="@+id/addButton" ... />
+    <Button android:id="@+id/payButton" ... />
+</LinearLayout>
+
+6. Implementación de Actividades
+Cada Activity debe manejar su propio comportamiento:
+
+MainActivity se encarga de mostrar y actualizar la lista de compras.
+AddItemActivity permite seleccionar y añadir productos a la lista.
+PaymentActivity gestiona la entrada de pago y muestra el cambio.
+7. Manejo de Eventos
+Implementa los manejadores de eventos para los botones y otras interacciones del usuario.
+
+8. Pruebas
+Prueba cada componente de forma aislada y luego toda la aplicación para asegurarte de que todo funciona como se espera.

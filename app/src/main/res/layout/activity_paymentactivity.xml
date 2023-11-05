@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewTotalToPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:text="@string/textViewTotalToPay" />
+
+    <TextView
+        android:id="@+id/textViewTotalMoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="@string/textViewTotalMoney" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:hint="@string/editTextNumberDecimal"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonFinalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/buttonFinalizar" />
+
+    <TextView
+        android:id="@+id/textViewVuelta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="@string/app_nametextViewVuelta" />
+
+    <Button
+        android:id="@+id/buttonGoMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="@string/buttonGoMain" />
+
+</LinearLayout>
